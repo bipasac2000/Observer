@@ -9,11 +9,11 @@ class CNetServer implements ServerFace {
 	
 	CNetServer(int id){
 		if (id == 1)
-			primeNet = new NetProxy("127.0.0.1", 9876, false); // 
+			primeNet = new NetProxy("127.0.0.1", 9876, false); 
 		else if (id == 0)
-			allNet = new NetProxy("127.0.0.1", 9877, false); // 
+			allNet = new NetProxy("127.0.0.1", 9877, false);  
 		else if (id == 2)
-			countNet = new NetProxy("127.0.0.1", 9878, false); // 
+			countNet = new NetProxy("127.0.0.1", 9878, false); 
 	}
 																
    public String handle (int input, int id) {

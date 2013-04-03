@@ -5,10 +5,9 @@ public class AllObserver implements Observer {
 		processor = p;
 		p.attach(this); 
 	}
-	ServerFace proxy = new ServerProxy(0); 
+	ServerFace proxy = new AllServerProxy(); 
 	public void update() {
-		//System.out.println(processor.getState()); 
-		System.out.println("Handled by All Server "+ proxy.handle(processor.getState(), 0)); 
+		System.out.println("View of All Observer "+ proxy.handle(processor.getState(), 0)); 
 	}
 	
 }
