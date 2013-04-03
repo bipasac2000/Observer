@@ -2,7 +2,7 @@
 public class PrimeServer {
 	
 	public static void main( String[] args ) {
-		 SSNetClient demo = new SSNetClient(9876); // port number 9877 is for prime
+		 SSNetClient demo = new SSNetClient(9876); 
 		 ServerFace srv = new Server();
 		 
 	   demo.start(srv); 

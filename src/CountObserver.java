@@ -5,12 +5,12 @@ public class CountObserver implements Observer {
 		processor = p;
 		p.attach(this); 
 	}
-	ServerFace proxy = new ServerProxy(2); 
+	ServerFace proxy = new CountServerProxy(); 
 	public void update() {
-		int count = processor.getCount(); 
-		if (count%4 == 0)
-			//System.out.println(processor.getState()); 
-			System.out.println("Handled by Count 4 Server "+proxy.handle(processor.getState(), 2)); 
+		int count = processor.getCount();
+		String output = proxy.handle(processor.getState(), count); 
+		if (!output.equals(""))
+			System.out.println("View of Count Server "+output); 
 	}
 	
 }

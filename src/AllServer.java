@@ -9,6 +9,4 @@ public class AllServer {
 		 System.out.println("server is finished");
 		                              	  
 	  }  
-
-
 }
