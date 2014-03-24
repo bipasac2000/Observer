@@ -1,4 +1,1 @@
-SWDAssgn3
-=========
-
-Observer, ServerProxy
+Software Design Assgn3- Observer, ServerProxy
